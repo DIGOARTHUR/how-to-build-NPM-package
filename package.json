@@ -1,0 +1,25 @@
+{
+  "name": "basic-mathjs-example",
+  "version": "1.0.0",
+  "description": "With basic mathematical operations, this package is used as an example of NPM package creation and testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DIGOARTHUR/basic-mathjs-example.git"
+  },
+  "keywords": [
+    "NPM",
+    "Tutorial",
+    "Building",
+    "Test"
+  ],
+  "author": "@digoarthur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DIGOARTHUR/basic-mathjs-example/issues"
+  },
+  "homepage": "https://github.com/DIGOARTHUR/basic-mathjs-example#readme"
+}
