@@ -77,9 +77,38 @@ https://dev.to/envoy_/150-badges-for-github-pnk
 </div>
 </p>
 
-
 <h1 align="center">
- 
+
 </h1>
+
+<!-------------------------------------------------------------------->
+ <!------------------------------------BADGES PROJECT  ---------------->
+ <!-------------------------------------------------------------------->
+
+  ![GitHub last commit](https://img.shields.io/github/last-commit/digoarthur/how-to-build-NPM-package
+)
+  ![GitHub](https://img.shields.io/github/license/digoarthur/how-to-build-NPM-package
+)
+  
+  
+<!-------------------------------------------------------------------->
+ <!------------------------------------STACKS && TOOLS --------->
+  <!-------------------------------------------------------------------->
+  
+
+  
+  
+<!-------------------------------------------------------------------->
+<!------------------------------------SUMMARY------------------------->
+<!-------------------------------------------------------------------->
+<p align="center">
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#--sobre-a-aplicação">Sobre a aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#--comandos"> Configurando Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Construindo Pacote</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Testando Pacote - LOCAL</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Deploy NPM</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Testando Pacote - REMOTO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>  
+
 
 
