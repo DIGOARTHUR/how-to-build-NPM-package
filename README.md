@@ -293,7 +293,58 @@ Instalar a tipagem de funções React por estar utilizando Typescript
 yarn add -D @types/react
 ```
 
+#  Estrutura de arquivos/pastas
+	
+    lib-project
+   		├── .git (oculto)
+    	├── node_modules	
+    	├── package.json
+    	└── tsconfig.json
+     
+
+
 
 # <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Construindo Pacote
 
+## `1.` Crie uma pasta source src
+As pastas e arquivos de construção de funcionalidades da biblioteca serão colocados aqui.
+
+ ### `1.1` Crie as funcionalidades da biblioteca
+ Voce pode criar, por exemplo:
+
+- Funções
+- Componentes
+- Hooks
+- Etc…
+
+### `1.2.` Crie o arquivo configurado no package.json (main) _index.js_ ou _index.ts_ dentro da pasta src.
+
+#### `1.2.1` Exporte aqui as Funções, Componentes, Hooks criados por você, para que seja possivel fazer o import no momeneto da instalação do seu pacote/biblioteca. Abaixo exemplo da biblioteca criada aqui neste repositório:
+
+```tsx
+export {TableGenerator} from './Components/TableGenerator';
+export { Division } from './Math/division/division';
+export { Multiplication } from './Math/multiplication/multiplication';
+export { Subtraction } from './Math/subtraction/subtraction';
+export { Sum } from './Math/sum/sum';
+```
+
+#  Estrutura de arquivos/pastas
+
+    lib-project
+     ├── .git (oculto)
+     ├── node_modules
+     ├── src
+     │    └── Components
+     │    │   	├── TableGenerator.tsx
+     │    │   	├── style.css
+     │    │ 
+     │    └── Functions
+     │      │    ├── ...
+     │      └── Hooks
+     │      │    ├── ...
+     │      └── index.ts
+     ├── package.json
+     ├── tsconfig.json
+    
 
