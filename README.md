@@ -161,3 +161,139 @@ npm init
 - **_author_**: insira seu nome, apelido…
 
 - **_license_**: nome da licença que dá direito a cópia, reprodução, melhorias etc… Pode colocar MIT.
+
+	- Arquivo **`package.json`** ficará assim, por exemplo:
+
+	```json
+	{
+  "name": "how-to-build-npm-package",
+  "version": "1.0.0",
+  "description": "projeto feito para exemplificar a criação de pacotes/bibliotecas NPM.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DIGOARTHUR/how-to-build-NPM-package.git"
+  },
+  "keywords": [
+    "NPM",
+    "Tutorial",
+    "Building",
+    "Package"
+  ],
+  "author": "@digoarthur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DIGOARTHUR/how-to-build-NPM-package/issues"
+  },
+  "homepage": "https://github.com/DIGOARTHUR/how-to-build-NPM-package#readme",
+	}
+	```
+
+## `3.` Configurando arquivo `package.json`
+
+Adicione as seguinte propriedades:
+
+
+- **_main_**: altere o caminho para src/index.ts ou index.js”. Assim o import do pacote poderá ser feito apenas pelo o nome dele.
+
+- **_typings_**: insira o caminho ./dist/index.d.ts. O erro indicando algo sobre a tipagem irá desaparecer.
+
+Acrescente outras propriedades mas agora nos **_scripts_**:
+- **_scripts_**:
+	- **_clean_**: insira o seguinte código abaixo, é um código [bash](https://github.com/DIGOARTHUR/bash-commands-tricks) que apagará a pasta dist no processo de build para que um novo seja criado.
+ 	```json
+	"clean": "rm -rf dist",
+	```
+  	- **_build_**: insira o seguinte código abaixo, é um comando que removerá o arquivo dist principal, rodará o typescript, irá mover os arquivos package.json README.md para pasta./dist.
+ 	```json
+	"build": "npm run clean && tsc && cp package.json README.md ./dist",
+	```
+  	- Arquivo **`package.json`** ficará assim, por exemplo:
+
+	```json
+	{
+  "name": "how-to-build-npm-package",
+  "version": "1.0.0",
+  "description": "projeto feito para exemplificar a criação de pacotes/bibliotecas NPM.",
+  "main": "/src/index.ts",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc && cp package.json README.md ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DIGOARTHUR/how-to-build-NPM-package.git"
+  },
+  "keywords": [
+    "NPM",
+    "Tutorial",
+    "Building",
+    "Package"
+  ],
+  "author": "@digoarthur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DIGOARTHUR/how-to-build-NPM-package/issues"
+  },
+  "homepage": "https://github.com/DIGOARTHUR/how-to-build-NPM-package#readme",
+	}
+	```
+
+ ## `4.` Instalando bibliotecas base
+
+ ### `4.1` React
+Para criação de Componentes será preciso instalar o React
+
+
+```bash
+yarn add -D react
+```
+
+ ### `4.2` Typescript
+Instalação do Typescript, instale-o e nao se esqueça de instalar os @types React.
+
+
+```bash
+yarn add -D typescript
+```
+
+#### `4.2.1` inicializar o arquivo `tsconfig.json`
+Arquivo responsável pela as configurações do Typescript. Este  Pode copiar e colar essa configurações no arquivo.
+
+```powershell
+npx tsc --init
+```
+
+```json
+{
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react",
+    "declaration": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "target": "es6",
+    "module": "es6",
+    "lib": ["es6", "dom", "es2017"],
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*"]
+}
+```
+
+ ### `4.3` Instalar tipagem React
+Instalar a tipagem de funções React por estar utilizando Typescript
+ 
+```bash
+yarn add -D @types/react
+```
+
+
+# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Construindo Pacote
+
+
