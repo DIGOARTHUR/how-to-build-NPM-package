@@ -71,10 +71,7 @@ https://dev.to/envoy_/150-badges-for-github-pnk
 	
 
   <br>
-<div align="center">
 
-
-</div>
 </p>
 
 <h1 align="center">
@@ -126,7 +123,9 @@ https://dev.to/envoy_/150-badges-for-github-pnk
  <!-------------------------------------------------------------------->
   <!------------------------------------CONTENT------->
   <!-------------------------------------------------------------------->
-  
+
+<br>   <br>  
+
 # <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Configurando Ambiente
 
 
@@ -303,7 +302,8 @@ yarn add -D @types/react
      
 
 
-
+  <br>   <br>  
+  
 # <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Construindo Pacote
 
 ## `1.` Crie uma pasta source src
@@ -349,13 +349,18 @@ export { Sum } from './Math/sum/sum';
      ├── tsconfig.json
     
 
+  <br>   <br>  
+  
 # <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Build
 O Build é muito importante após qualquer alteração no código, pois ele gerará os arquivos .js na pasta `dist` para que seja possivel a intepretação da linguagem Typescript.
 
-Rodar este comando no Git Bash Here que emula um termninal Linux, para que aqueles comandos configurados no `package.json` possam rodar.
+Rodar este comando no `Git Bash Here` que emula um termninal Linux, para que aqueles comandos configurados no `package.json` possam rodar.
 
+<div align="center">
+<img  alt="skills"   src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/ed0a2c59-6aeb-4c5a-9c7d-de96ef3e8464.png">
 
-<img  alt="skills"   height="40" src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/ed0a2c59-6aeb-4c5a-9c7d-de96ef3e8464.png">
+</div>
+
 
 ```powershell
 npm run build
@@ -380,3 +385,60 @@ npm run build
      │
      ├── package.json
      ├── tsconfig.json
+
+
+  <br>   <br>  
+  
+# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Testando Pacote - `LOCAL` 
+
+
+## `1.` Publicação `local`  
+Ainda no `Git Bash Here`, rode o comando para disponibilizar o pacote de forma local, para que voce possa testá-lo já rondado um projeto React.
+
+```powershell
+npx yalc publish
+```
+## `2.` Instalação biblioteca `local` 
+Agora na aplicação React, rode o seguinte comando para que possa executar uma instalação local:
+```powershell
+npx yalc add <nome da biblioteca>
+```
+## `3.`  Importe sua biblioteca
+As Funções, Componentes, Hooks, etc… são importados daquele arquivo index.js ou index.ts. Aqui um exemplo da biblioteca deste repositório…
+```powershell
+import {TableGenerator} from 'how-to-build-npm-package'
+```
+# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Deploy NPM `REMOTO`
+
+## `1.` Crie uma conta na plataforma NPM
+
+## `2.` Login NPM
+
+ No diretório do seu projeto pode ser um CMD, PowerShell, Gitbash e até o terminal do Vscode, rode seguinte comando:
+ 
+```powershell
+npm login
+```
+
+Aperta ENTER e abrirá uma página de login do NPM, caso nao esteja logado.
+
+## `3.` Publicação Pacote `remoto`
+
+```powershell
+npm publish
+```
+
+  <br>   <br>  
+  
+# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Testando Pacote - `REMOTO`
+
+Agora na aplicação React, rode o seguinte comando para que possa executar uma instalação da sua biblioteca:
+ 
+
+```powershell
+yarn add <nome do pacote>
+```
+
+```powershell
+npm install <nome do pacote>
+```
