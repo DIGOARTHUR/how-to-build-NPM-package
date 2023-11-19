@@ -334,6 +334,39 @@ export { Sum } from './Math/sum/sum';
     lib-project
      ├── .git (oculto)
      ├── node_modules
+     ├── `src`
+     │    └── `Components`
+     │    │   	├── TableGenerator.tsx
+     │    │   	├── style.css
+     │    │ 
+     │    └── `Functions`
+     │      │    ├── ...
+     │      └── `Hooks`
+     │      │    ├── ...
+     │      └── `index.ts`
+     │
+     ├── package.json
+     ├── tsconfig.json
+    
+
+# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Build
+O Build é muito importante após qualquer alteração no código, pois ele gerará os arquivos .js na pasta `dist` para que seja possivel a intepretação da linguagem Typescript.
+
+Rodar este comando no Git Bash Here que emula um termninal Linux, para que aqueles comandos configurados no `package.json` possam rodar.
+
+
+<img  alt="skills"   height="40" src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/ed0a2c59-6aeb-4c5a-9c7d-de96ef3e8464.png">
+
+```powershell
+npm run build
+```
+
+#  Estrutura de arquivos/pastas
+
+    lib-project
+     ├── .git (oculto)
+     ├── `dist`
+     ├── node_modules
      ├── src
      │    └── Components
      │    │   	├── TableGenerator.tsx
@@ -347,5 +380,3 @@ export { Sum } from './Math/sum/sum';
      │
      ├── package.json
      ├── tsconfig.json
-    
-
