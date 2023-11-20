@@ -101,15 +101,15 @@ https://dev.to/envoy_/150-badges-for-github-pnk
 <!------------------------------------SUMMARY------------------------->
 <!-------------------------------------------------------------------->
 <p align="center">
-  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#--sobre-a-aplicação">Sobre a aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#--comandos"> Configurando Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Construindo Pacote</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Instalação Pacote - LOCAL</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/tree/main#--sobre-a-aplicação">Sobre a aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--configurando-ambiente"> Configurando Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--build"> Construindo Pacote</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--install-pacote---local"> Instalação Pacote - LOCAL</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 	</p>  
  
  <p align="center">
-  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Deploy NPM</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Instalação Pacote - REMOTO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--deploy-npm-remoto"> Deploy NPM</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--install-pacote---remoto"> Instalação Pacote - REMOTO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>  
 
    <!-------------------------------------------------------------------->
