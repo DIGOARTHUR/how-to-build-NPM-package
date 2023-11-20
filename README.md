@@ -439,7 +439,7 @@ Por exemplo
 yarn add -D @types/jest
 ```
 
-
+ <br>   <br>  
   
 # <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/284275442-d1112329-3b00-47fb-9fe1-b519bc654889.svg">  Build
 O Build é muito importante após qualquer alteração no código, pois ele gerará os arquivos .js na pasta `dist` para que seja possivel a intepretação da linguagem Typescript.
@@ -477,13 +477,13 @@ npm run build
      ├── tsconfig.json
 
 
-
-
-  <br>   <br>  
   
 # <img  alt="skills"  width="40" height="40" src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/74f44c47-891a-4276-a2c6-d4153bd8aed5">  Install Pacote - `LOCAL` 
 
 
+
+  <br>   <br>  
+  
 ## `1.` Publicação `local`  
 Ainda no `Git Bash Here`, rode o comando para disponibilizar o pacote de forma local, para que voce possa testá-lo já rondado um projeto React.
 
