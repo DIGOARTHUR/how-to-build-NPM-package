@@ -104,9 +104,12 @@ https://dev.to/envoy_/150-badges-for-github-pnk
   <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#--sobre-a-aplicação">Sobre a aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#--comandos"> Configurando Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Construindo Pacote</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Install Pacote - LOCAL</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Instalação Pacote - LOCAL</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+	</p>  
+ 
+ <p align="center">
   <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Deploy NPM</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Install Pacote - REMOTO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Instalação Pacote - REMOTO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>  
 
    <!-------------------------------------------------------------------->
@@ -333,6 +336,82 @@ export { Subtraction } from './Math/subtraction/subtraction';
 export { Sum } from './Math/sum/sum';
 ```
 
+## `2.` Testes (Componentes, Funcoes, Hooks, etc...)
+O teste é opcional mas, como boas práticas, é essecial introduzi-lo nos seus projetos. Aqui é aplicado o `Jest`.
+Este teste se tem muito contato direto na plataforma de resolução de algoritmos [exercism.org](exercism.org/).
+Um exemplo aplicado são das funcoes matemáticas, onde é importado a funcao e aplicado o teste em um arquivo.
+
+### `2.1.` Instalando o Jest e o @types
+
+```bash
+yarn add -D jest ts-jest @types/jest
+```
+
+
+Será criado um arquivo `jest.config.js`
+
+```json
+{
+module.exports = {
+    preset: "ts-jest",
+    testEnvironment: "node",
+  };
+}
+```
+
+## `2.2` Configurando arquivo `package.json`
+Para todar o teste será preciso fazer uma configuração na propriedade:
+- **_scripts_**
+	- **_teste_**:"jest"
+
+```json
+	{
+  "name": "how-to-build-npm-package",
+  "version": "1.0.0",
+  "description": "projeto feito para exemplificar a criação de pacotes/bibliotecas NPM.",
+  "main": "/src/index.ts",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc && cp package.json README.md ./dist",
+    "test": "jest"
+  },
+  "repository": {
+  ...
+  ...
+``` 
+
+
+
+
+## `2.2` Criando arquivo para teste
+Aqui eu criei o arquivo no mesmo local que a função. Nomeei: nomeDaFuncao.test.ts, um exemplo aqui, division.teste.ts.
+Importei a funcao no arquivo criado e então apliquei um possibilidade do que realmente deve ocorrer caso seja aplicado o teste.
+
+```json
+{
+import { Division } from './division';
+
+test('division two numbers correctly', () => {
+  const result = Division(4, 2);
+  expect(result).toBe(2);
+});
+```
+
+### `2.2.` Rodando teste.
+
+```bash
+yarn test
+```
+Por exemplo
+
+<div align="center">
+	
+![image](https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/cde877c5-c26a-4347-8d14-5147f5860241)
+
+</div>
+
+
 #  Estrutura de arquivos/pastas
 
     lib-project
@@ -355,7 +434,9 @@ export { Sum } from './Math/sum/sum';
 
   <br>   <br>  
 
-
+```bash
+yarn add -D @types/jest
+```
 
 
   
