@@ -350,13 +350,14 @@ yarn add -D jest ts-jest @types/jest
 
 Será criado um arquivo `jest.config.js`
 
-```json
+```javascript
 {
 module.exports = {
     preset: "ts-jest",
     testEnvironment: "node",
   };
 }
+
 ```
 
 ## `2.2` Configurando arquivo `package.json`
@@ -385,17 +386,17 @@ Para todar o teste será preciso fazer uma configuração na propriedade:
 
 
 ## `2.2` Criando arquivo para teste
-Aqui eu criei o arquivo no mesmo local que a função. Nomeei: nomeDaFuncao.test.ts, um exemplo aqui, division.teste.ts.
+Aqui eu criei o arquivo no mesmo local que a função. Nomeei: `nomeDaFuncao.test.ts` , um exemplo aqui, `division.teste.ts`.
 Importei a funcao no arquivo criado e então apliquei um possibilidade do que realmente deve ocorrer caso seja aplicado o teste.
 
-```json
-{
+```javascript
 import { Division } from './division';
 
 test('division two numbers correctly', () => {
   const result = Division(4, 2);
   expect(result).toBe(2);
 });
+
 ```
 
 ### `2.2.` Rodando teste.
