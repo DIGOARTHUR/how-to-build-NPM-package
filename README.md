@@ -3,6 +3,8 @@
 
 
 
+
+
 <!-- VISUALIZAR NO README VSCODE  CTRL + K  V -->
 
 <!-------------------------------------------------------------------->
@@ -102,9 +104,9 @@ https://dev.to/envoy_/150-badges-for-github-pnk
   <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#--sobre-a-aplicação">Sobre a aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#--comandos"> Configurando Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Construindo Pacote</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Testando Pacote - LOCAL</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Install Pacote - LOCAL</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Deploy NPM</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Testando Pacote - REMOTO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/#-rodando-a-aplicação"> Install Pacote - REMOTO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>  
 
    <!-------------------------------------------------------------------->
@@ -302,9 +304,11 @@ yarn add -D @types/react
      
 
 
+
+
   <br>   <br>  
   
-# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Construindo Pacote
+# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/284266592-ae612623-650a-4d12-817c-9d92312db091.svg">  Construindo Pacote
 
 ## `1.` Crie uma pasta source src
 As pastas e arquivos de construção de funcionalidades da biblioteca serão colocados aqui.
@@ -350,8 +354,12 @@ export { Sum } from './Math/sum/sum';
     
 
   <br>   <br>  
+
+
+
+
   
-# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Build
+# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/284275442-d1112329-3b00-47fb-9fe1-b519bc654889.svg">  Build
 O Build é muito importante após qualquer alteração no código, pois ele gerará os arquivos .js na pasta `dist` para que seja possivel a intepretação da linguagem Typescript.
 
 Rodar este comando no `Git Bash Here` que emula um termninal Linux, para que aqueles comandos configurados no `package.json` possam rodar.
@@ -387,9 +395,11 @@ npm run build
      ├── tsconfig.json
 
 
+
+
   <br>   <br>  
   
-# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Testando Pacote - `LOCAL` 
+# <img  alt="skills"  width="40" height="40" src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/74f44c47-891a-4276-a2c6-d4153bd8aed5">  Install Pacote - `LOCAL` 
 
 
 ## `1.` Publicação `local`  
@@ -408,7 +418,7 @@ As Funções, Componentes, Hooks, etc… são importados daquele arquivo index.j
 ```powershell
 import {TableGenerator} from 'how-to-build-npm-package'
 ```
-# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Deploy NPM `REMOTO`
+# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/284279944-e6593b0e-e98c-407a-9ab6-493243f10442.svg">  Deploy NPM `REMOTO`
 
 ## `1.` Crie uma conta na plataforma NPM
 
@@ -430,7 +440,7 @@ npm publish
 
   <br>   <br>  
   
-# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Testando Pacote - `REMOTO`
+# <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/284280005-211554fa-5cac-45cb-8184-30c97ccecc58.svg">  Install Pacote - `REMOTO`
 
 Agora na aplicação React, rode o seguinte comando para que possa executar uma instalação da sua biblioteca:
  
