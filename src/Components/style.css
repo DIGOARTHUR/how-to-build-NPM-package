@@ -1,0 +1,79 @@
+
+table {
+    color: black;
+    border-collapse: collapse;
+   
+    
+}
+
+
+
+tbody tr td{
+    padding: 5px;
+    padding: 0px 10px;
+ }
+
+
+.Violet thead{
+    background: #e5e5e5;
+}
+
+.Violet tbody tr:nth-child(2n){
+    background: #8c84e3;
+   
+}
+
+.Violet tbody tr:nth-child(2n+1){
+    background: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+.Blue thead{
+    background: #adcce9;
+}
+
+.Blue tbody tr:nth-child(2n){
+    background: #e9f2fa;
+   
+}
+
+.Blue tbody tr:nth-child(2n+1){
+    background: #ffffff;
+}
+
+
+
+
+
+.Black {
+    color: #ffffff;
+    border-collapse: collapse;  
+}
+
+
+ 
+.Black thead{
+    background: #000000;
+}
+
+.Black tbody tr:nth-child(2n){
+    background: #e0e5eb;
+   
+}
+
+.Black tbody tr:nth-child(2n+1){
+    background: #f9f9fb;
+}
+
+.Black tbody tr td{
+    color: #000000;
+ }
+
+ 
