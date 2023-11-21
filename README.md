@@ -69,7 +69,7 @@ https://dev.to/envoy_/150-badges-for-github-pnk
   <img height="200px" alt="bashftreactgit" title="bashftreactgit" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/283223606-f9bea4a6-699c-4e7b-8d9a-ca968fb017c0.svg" />
   <br>
   <br>
-  <i>De forma fácil e prática! Utilize Javascript <img height="15px" alt="bashftreactgit" title="bashftreactgit" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/283226388-6bd63b03-9906-4da0-8a4b-d06c900e97b1.svg" /> / Typescript <img height="15px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/6f5dc450-35f9-47b3-8da1-74223764fa07.svg" /> e React <img height="15px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/d0e89ec9-e557-40e8-842b-e817af6df9b7.svg" /> para criar funções, componentes, hooks e etc... </i>
+  <i>De forma fácil e prática! Utilize Javascript <img height="15px" alt="bashftreactgit" title="bashftreactgit" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/283226388-6bd63b03-9906-4da0-8a4b-d06c900e97b1.svg" /> / Typescript <img height="15px" alt="bashftreactgit" title="bashftreactgit" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/283230339-6f5dc450-35f9-47b3-8da1-74223764fa07.svg" /> e React <img height="15px" alt="bashftreactgit" title="bashftreactgit" src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/d0e89ec9-e557-40e8-842b-e817af6df9b7" /> para criar funções, componentes, hooks e etc... </i>
 	
 
   <br>

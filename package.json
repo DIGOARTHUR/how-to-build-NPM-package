@@ -1,6 +1,6 @@
 {
   "name": "how-to-build-npm-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Projeto modelo para ilustrar e orientar o passo a passo para construção de um pacote/biblioteca NPM ",
   "main": "/src/index.ts",
   "source": "src/index.ts",
