@@ -546,7 +546,7 @@ npm install <nome do pacote>
   <!------------------------------------WHY/THANKS--------------------->
   <!-------------------------------------------------------------------->
 
-
+<br>   <br>  <br>   <br>  
 
  # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622627-c1eaa513-ca90-49e2-b5b8-c11d369becef.png"> Por que?  <!---write here : motivation that led to created ; why did you do this program?   -->
 Na época que surgiu a ideia de construir uma biblioteca fui atrás de vários tutorias, fontes e etc... Foi aí que nasceu o [github-automated-repos](https://github.com/DIGOARTHUR/github-automated-repos). Fiz este repositório como um tutorial que explique da forma mais clara e direta possível, e ainda em Português. Espero que desenvolvam coisas maravilhosas e úteis para a comunidade. Abraços e Sucesso!
