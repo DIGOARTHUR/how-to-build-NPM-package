@@ -112,6 +112,8 @@ https://dev.to/envoy_/150-badges-for-github-pnk
   <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--install-pacote---remoto"> Instalação Pacote - REMOTO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>  
 
+  <br>  <br> 
+  
    <!-------------------------------------------------------------------->
    <!------------------------------------DESCRIPTION--------------------->
    <!---write here : talk a little about project: what's does, example.  -->
@@ -123,14 +125,15 @@ https://dev.to/envoy_/150-badges-for-github-pnk
 
 ---
 
-  <br>   <br>  
 
  <!-------------------------------------------------------------------->
   <!------------------------------------CONTENT------->
   <!-------------------------------------------------------------------->
 
-<br>   <br>  
 
+  
+ <br> 
+ 
 # <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/265221445-3a17120c-8847-4987-95ba-2014dc8d2e5f.png">  Configurando Ambiente
 
 
@@ -154,11 +157,11 @@ npm init
 
 - **_description_**: descreva resumidamente sobre o que é o seu projeto, do que se trata.
 
-- **_entry point_**: nomear o arquivo principal, o arquivo que quando for feita a importação da sua bibilioteca os arquivos serão localizados nele. Pode nomear /src/index.js (caso use Javascript) ou /src/index.ts (caso use Typescript)
+- **_entry point_**: nomear o arquivo principal, o arquivo que quando for feita a importação da sua bibilioteca os arquivos serão localizados nele. Pode nomear src/index.js (caso use Javascript) ou src/index.ts (caso use Typescript)
 
 - **_test command_**: iremos configurar em outra etapa, deixe em branco.
 
-- **_git repository_**: coloque aqui a URL do repositório criado lá no GitHub para este projeto 
+- **_git repository_**: coloque aqui a URL do repositório criado aqui no GitHub para este projeto 
 
 - **_keywords_**: coloque aqui separado por virgulas, palavras chaves que tenha relação com seu projeto.
 
@@ -201,9 +204,9 @@ npm init
 Adicione as seguinte propriedades:
 
 
-- **_main_**: altere o caminho para src/index.ts ou index.js”. Assim o import do pacote poderá ser feito apenas pelo o nome dele.
+- **_main_**: Indica o arquivo principal que será utilizado na importação do pacote. Altere o caminho para src/index.ts ou index.js”, assim o import do pacote poderá ser feito apenas pelo o nome dele.
 
-- **_typings_**: insira o caminho ./dist/index.d.ts. O erro indicando algo sobre a tipagem irá desaparecer.
+- **_types_**: insira o caminho ./dist/index.d.ts. O erro indicando algo sobre a tipagem irá desaparecer.
 
 Acrescente outras propriedades mas agora nos **_scripts_**:
 - **_scripts_**:
@@ -223,7 +226,7 @@ Acrescente outras propriedades mas agora nos **_scripts_**:
   "version": "1.0.0",
   "description": "projeto feito para exemplificar a criação de pacotes/bibliotecas NPM.",
   "main": "/src/index.ts",
-  "typings": "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc && cp package.json README.md ./dist",
@@ -266,13 +269,13 @@ Instalação do Typescript, instale-o e nao se esqueça de instalar os @types Re
 yarn add -D typescript
 ```
 
-#### `4.2.1` inicializar o arquivo `tsconfig.json`
-Arquivo responsável pela as configurações do Typescript. Este  Pode copiar e colar essa configurações no arquivo.
+#### `4.2.1` Inicializar o arquivo `tsconfig.json`
+Arquivo responsável pela as configurações do Typescript. 
 
 ```powershell
 npx tsc --init
 ```
-
+Pode copiar e colar essa configurações no arquivo.
 ```json
 {
   "compilerOptions": {
@@ -313,7 +316,7 @@ yarn add -D @types/react
   
 # <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/284266592-ae612623-650a-4d12-817c-9d92312db091.svg">  Construindo Pacote
 
-## `1.` Crie uma pasta source src
+## `1.` Crie uma pasta source `src`
 As pastas e arquivos de construção de funcionalidades da biblioteca serão colocados aqui.
 
  ### `1.1` Crie as funcionalidades da biblioteca
@@ -324,9 +327,9 @@ As pastas e arquivos de construção de funcionalidades da biblioteca serão col
 - Hooks
 - Etc…
 
-### `1.2.` Crie o arquivo configurado no package.json (main) _index.js_ ou _index.ts_ dentro da pasta src.
+### `1.2` Crie o arquivo `_index.js_` ou `_index.ts_`, configurado no package.json na propriedade (main), dentro da pasta src.
 
-#### `1.2.1` Exporte aqui as Funções, Componentes, Hooks criados por você, para que seja possivel fazer o import no momeneto da instalação do seu pacote/biblioteca. Abaixo exemplo da biblioteca criada aqui neste repositório:
+#### `1.2.1` Exporte aqui as Funções, Componentes, Hooks criados por você, para que seja possivel fazer o import no momento da instalação do seu pacote/biblioteca. Abaixo exemplo da biblioteca criada aqui neste repositório:
 
 ```tsx
 export {TableGenerator} from './Components/TableGenerator';
@@ -336,19 +339,19 @@ export { Subtraction } from './Math/subtraction/subtraction';
 export { Sum } from './Math/sum/sum';
 ```
 
-## `2.` Testes (Componentes, Funcoes, Hooks, etc...)
-O teste é opcional mas, como boas práticas, é essecial introduzi-lo nos seus projetos. Aqui é aplicado o `Jest`.
+## `2.` Testes (Componentes, Funções, Hooks, etc...)
+O teste é opcional mas, como boas práticas, é essecial introduzí-lo nos seus projetos. Aqui é aplicado o `Jest`.
 Este teste se tem muito contato direto na plataforma de resolução de algoritmos [exercism.org](exercism.org/).
-Um exemplo aplicado são das funcoes matemáticas, onde é importado a funcao e aplicado o teste em um arquivo.
 
-### `2.1.` Instalando o Jest e o @types
+
+### `2.1` Instalando o Jest e o @types
 
 ```bash
 yarn add -D jest ts-jest @types/jest
 ```
 
 
-Será criado um arquivo `jest.config.js`
+#### `2.1.1` Será criado um arquivo `jest.config.js`
 
 ```javascript
 {
@@ -360,8 +363,8 @@ module.exports = {
 
 ```
 
-## `2.2` Configurando arquivo `package.json`
-Para todar o teste será preciso fazer uma configuração na propriedade:
+### `2.2` Configurando arquivo `package.json`
+Para rodar o teste será preciso fazer uma configuração na propriedade:
 - **_scripts_**
 	- **_teste_**:"jest"
 
@@ -381,36 +384,6 @@ Para todar o teste será preciso fazer uma configuração na propriedade:
   ...
   ...
 ``` 
-
-
-
-
-## `2.2` Criando arquivo para teste
-Aqui eu criei o arquivo no mesmo local que a função. Nomeei: `nomeDaFuncao.test.ts` , um exemplo aqui, `division.teste.ts`.
-Importei a funcao no arquivo criado e então apliquei um possibilidade do que realmente deve ocorrer caso seja aplicado o teste.
-
-```javascript
-import { Division } from './division';
-
-test('division two numbers correctly', () => {
-  const result = Division(4, 2);
-  expect(result).toBe(2);
-});
-
-```
-
-### `2.2.` Rodando teste.
-
-```bash
-yarn test
-```
-Por exemplo
-
-<div align="center">
-	
-![image](https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/cde877c5-c26a-4347-8d14-5147f5860241)
-
-</div>
 
 
 #  Estrutura de arquivos/pastas
@@ -433,11 +406,40 @@ Por exemplo
      ├── tsconfig.json
     
 
-  <br>   <br>  
+  <br>  
+
+
+## `4.` Criando arquivo para teste
+Aqui neste projeto foi criado um arquivo no mesmo local que a função. Padrão do nome: `nomeDaFuncao.test.ts` , um exemplo aqui, `division.teste.ts`.
+Importe a funcão no arquivo criado e então aplique o teste, escrevendo possibilidades do que realmente deve ocorrer caso seja aplicado.
+
+Exemplo de teste:
+
+```javascript
+import { Division } from './division';
+
+test('division two numbers correctly', () => {
+  const result = Division(4, 2);
+  expect(result).toBe(2);
+});
+
+```
+
+### `4.2` Rodando teste.
 
 ```bash
-yarn add -D @types/jest
+yarn test
 ```
+Por exemplo
+
+<div align="center">
+	
+![image](https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/cde877c5-c26a-4347-8d14-5147f5860241)
+
+</div>
+
+
+
 
  <br>   <br>  
   
@@ -475,14 +477,15 @@ npm run build
      │
      ├── package.json
      ├── tsconfig.json
+     
 
-
+<br>   <br>  
   
 # <img  alt="skills"  width="40" height="40" src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/74f44c47-891a-4276-a2c6-d4153bd8aed5">  Install Pacote - `LOCAL` 
 
 
 
-  <br>   <br>  
+
   
 ## `1.` Publicação `local`  
 Ainda no `Git Bash Here`, rode o comando para disponibilizar o pacote de forma local, para que voce possa testá-lo já rondado um projeto React.
@@ -500,6 +503,8 @@ As Funções, Componentes, Hooks, etc… são importados daquele arquivo index.j
 ```powershell
 import {TableGenerator} from 'how-to-build-npm-package'
 ```
+
+<br>   <br>  
 # <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/284279944-e6593b0e-e98c-407a-9ab6-493243f10442.svg">  Deploy NPM `REMOTO`
 
 ## `1.` Crie uma conta na plataforma NPM
@@ -520,7 +525,7 @@ Aperta ENTER e abrirá uma página de login do NPM, caso nao esteja logado.
 npm publish
 ```
 
-  <br>   <br>  
+<br>   <br>  
   
 # <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/284280005-211554fa-5cac-45cb-8184-30c97ccecc58.svg">  Install Pacote - `REMOTO`
 
@@ -534,3 +539,24 @@ yarn add <nome do pacote>
 ```powershell
 npm install <nome do pacote>
 ```
+
+
+
+  <!-------------------------------------------------------------------->
+  <!------------------------------------WHY/THANKS--------------------->
+  <!-------------------------------------------------------------------->
+
+
+
+ # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622627-c1eaa513-ca90-49e2-b5b8-c11d369becef.png"> Por que?  <!---write here : motivation that led to created ; why did you do this program?   -->
+Na época que surgiu a ideia de construir uma biblioteca fui atrás de vários tutorias, fontes e etc... Foi aí que nasceu o [github-automated-repos](https://github.com/DIGOARTHUR/github-automated-repos). Fiz este repositório como um tutorial que explique da forma mais clara e direta possível, e ainda em Português. Espero que desenvolvam coisas maravilhosas e úteis para a comunidade. Abraços e Sucesso!
+
+ ---
+
+`by`: [@digoarthur](https://www.linkedin.com/in/digoarthur/)
+
+`sources`:  
+[freecodecamp.org](https://www.freecodecamp.org/news/how-to-create-and-publish-your-first-npm-package/) ,
+[pauloe-me.medium](https://pauloe-me.medium.com/typescript-npm-package-publishing-a-beginners-guide-40b95908e69c) ,
+[tunmise.medium](https://medium.com/the-andela-way/build-and-publish-your-first-npm-package-a4daf0e2431) ,
+[dev.to/femi_dev](https://dev.to/femi_dev/how-to-build-and-publish-your-first-react-npm-package-24o3)
