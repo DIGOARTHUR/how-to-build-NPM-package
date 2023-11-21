@@ -18,7 +18,9 @@
     "NPM",
     "Tutorial",
     "Building",
-    "Test"
+    "Test",
+    "Library",
+    "Package"
   ],
   "author": "@digoarthur",
   "license": "MIT",
