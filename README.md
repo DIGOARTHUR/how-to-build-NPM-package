@@ -300,7 +300,7 @@ Instalar a tipagem de funções React por estar utilizando Typescript
 yarn add -D @types/react
 ```
 
-#  Estrutura de arquivos/pastas
+##  Estrutura de arquivos/pastas
 	
     lib-project
    		├── .git (oculto)
@@ -386,7 +386,7 @@ Para rodar o teste será preciso fazer uma configuração na propriedade:
 ``` 
 
 
-#  Estrutura de arquivos/pastas
+##  Estrutura de arquivos/pastas
 
     lib-project
      ├── .git (oculto)
@@ -458,7 +458,7 @@ Rodar este comando no `Git Bash Here` que emula um termninal Linux, para que aqu
 npm run build
 ```
 
-#  Estrutura de arquivos/pastas
+##  Estrutura de arquivos/pastas
 
     lib-project
      ├── .git (oculto)
