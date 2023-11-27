@@ -113,7 +113,7 @@ https://dev.to/envoy_/150-badges-for-github-pnk
 </p>  
 
  <p align="center">
-  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--deploy-npm-remoto">Utilizando exemplo lib repositório</a>
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/tree/main#utilizando-exemplo-lib-repositório">Utilizando exemplo lib repositório</a>
 
 </p>  
 
