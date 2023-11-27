@@ -104,12 +104,17 @@ https://dev.to/envoy_/150-badges-for-github-pnk
   <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package/tree/main#--sobre-a-aplicação">Sobre a aplicação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--configurando-ambiente"> Configurando Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--build"> Construindo Pacote</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--install-pacote---local"> Instalação Pacote - LOCAL</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--install-pacote---local"> Instalação Pacote - LOCAL</a>
 	</p>  
  
  <p align="center">
   <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--deploy-npm-remoto"> Deploy NPM</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--install-pacote---remoto"> Instalação Pacote - REMOTO</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--install-pacote---remoto"> Instalação Pacote - REMOTO</a>
+</p>  
+
+ <p align="center">
+  <a href="https://github.com/DIGOARTHUR/how-to-build-NPM-package#--deploy-npm-remoto">Utilizando exemplo lib repositório</a>
+
 </p>  
 
   <br>  <br> 
@@ -539,6 +544,83 @@ yarn add <nome do pacote>
 ```powershell
 npm install <nome do pacote>
 ```
+
+<br>   <br>  
+-----
+
+<br>   <br>  
+  
+#  Utilizando exemplo lib repositório
+
+
+```powershell
+yarn add how-to-build-npm-package
+
+ou
+
+npm install how-to-build-npm-package
+```
+
+```typescript     
+import {TableGenerator,Multiplication} from 'how-to-build-npm-package'
+
+console.log(Multiplication(2,2))
+
+function App() {
+  return (
+  <TableGenerator data={data} tableType='Blue'/>
+  )
+}
+
+export default App
+```
+
+
+### Componente
+
+```typescript
+import {TableGenerator } from 'how-to-build-npm-package'
+
+<TableGenerator data={data} tableType='Blue'/>
+```
+- data tem que ser inserido uma array de objetos, exemplo:
+  
+```javascript
+const data = [
+  {
+    name: "Pedro",
+    email: 'predro@site.com.br',
+    dataCadastro: '25/04/2021 às 01:03:02',
+
+  },
+  {
+    name: "Monica",
+    email: 'monica@site.com.br',
+    dataCadastro: '25/04/2021 às 01:03:02',
+
+  },
+  {
+    name: "Joao",
+    email: 'Joaoa@site.com.br',
+    dataCadastro: '25/04/2021 às 01:03:02',
+
+  }
+]
+```
+
+### Função
+
+```typescript
+import {Multiplication,Subtraction,Division,Sum } from 'how-to-build-npm-package'
+
+console.log(Multiplication(2,2))
+console.log(Subtraction(2,2))
+console.log(Division(2,2))
+console.log(Sum(2,2))
+```
+
+
+
 
 
 
