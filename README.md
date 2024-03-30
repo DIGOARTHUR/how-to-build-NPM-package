@@ -311,7 +311,8 @@ yarn add -D @types/react
    		├── .git (oculto)
     	├── node_modules	
     	├── package.json
-    	└── tsconfig.json
+    	├── tsconfig.json
+    	└── yarn.lock
      
 
 
