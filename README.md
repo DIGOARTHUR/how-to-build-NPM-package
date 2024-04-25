@@ -164,7 +164,7 @@ npm init
 
 - **_entry point_**: nomear o arquivo principal, o arquivo que quando for feita a importação da sua bibilioteca os arquivos serão localizados nele. Pode nomear src/index.js (caso use Javascript) ou src/index.ts (caso use Typescript)
 
-- **_test command_**: iremos configurar em outra etapa, deixe em branco.
+- **_test command_**: caso queira inserir testes, nos próximos tópicos mostro como configurar, senão deixe em branco.
 
 - **_git repository_**: coloque aqui a URL do repositório criado aqui no GitHub para este projeto 
 
@@ -206,8 +206,10 @@ npm init
 
 ## `3.` Configurando arquivo `package.json`
 
-Adicione as seguinte propriedades:
+> [!IMPORTANT]
+> Muita atenção ao caminho da props **_main_**, configure-o de forma correta, senão terá dificuldade de acesso e terá que acrescentar mais caminho lá no import da biblioteca na sua aplicação.
 
+Adicione as seguinte propriedades:
 
 - **_main_**: Indica o arquivo principal que será utilizado na importação do pacote. Altere o caminho para src/index.ts ou index.js”, assim o import do pacote poderá ser feito apenas pelo o nome dele.
 
@@ -318,8 +320,10 @@ yarn add -D @types/react
 
 
 
-  <br>   <br>  
-  
+  <br>   
+  <br> 
+  <br>  
+
 # <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/284266592-ae612623-650a-4d12-817c-9d92312db091.svg">  Construindo Pacote
 
 ## `1.` Crie uma pasta source `src`
@@ -345,9 +349,18 @@ export { Subtraction } from './Math/subtraction/subtraction';
 export { Sum } from './Math/sum/sum';
 ```
 
-## `2.` Testes (Componentes, Funções, Hooks, etc...)
-O teste é opcional mas, como boas práticas, é essecial introduzí-lo nos seus projetos. Aqui é aplicado o `Jest`.
+<br>  
+<br>  
+<br>  
+
+
+
+# <img  alt="skills"  width="40" height="40" src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/7f817419-f6fe-4b25-8de1-f9d97074b982"> Testes (Componentes, Funções, Hooks, etc...)
+O teste é **_opcional_** mas, como boas práticas, é essecial introduzí-lo nos seus projetos. Aqui é aplicado o `Jest`.
 Este teste se tem muito contato direto na plataforma de resolução de algoritmos [exercism.org](exercism.org/).
+
+> [!IMPORTANT]
+> NÃO É OBRIGATÓRIO
 
 
 ### `2.1` Instalando o Jest e o @types
@@ -450,9 +463,13 @@ Por exemplo
  <br>   <br>  
   
 # <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/284275442-d1112329-3b00-47fb-9fe1-b519bc654889.svg">  Build
-O Build é muito importante após qualquer alteração no código, pois ele gerará os arquivos .js na pasta `dist` para que seja possivel a intepretação da linguagem Typescript.
+O Build é muito importante após qualquer alteração no código, pois ele gerará os arquivos .js na pasta `dist` para que seja possivel a intepretação da linguagem Typescript, até mesmo em Javascript, pois será essa build que está na plataforma NPM .
 
-Rodar este comando no `Git Bash Here` que emula um termninal Linux, para que aqueles comandos configurados no `package.json` possam rodar.
+Rode este comando no `Git Bash Here` que emula um termninal Linux, para que aqueles comandos configurados no `package.json` possam rodar.
+
+```powershell
+npm run build
+```
 
 <div align="center">
 <img  alt="skills"   src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/ed0a2c59-6aeb-4c5a-9c7d-de96ef3e8464.png">
@@ -460,11 +477,9 @@ Rodar este comando no `Git Bash Here` que emula um termninal Linux, para que aqu
 </div>
 
 
-```powershell
-npm run build
-```
+Após este comando uma pasta chamada `dist` surgirá. É exatamente com este diretório que iremos testar, de forma local, a biblioteca constrúida antes de pode subí-la para a plataforma NPM.
 
-##  Estrutura de arquivos/pastas
+##  Exemplo de Estrutura de arquivos/pastas
 
     lib-project
      ├── .git (oculto)
@@ -485,32 +500,40 @@ npm run build
      ├── tsconfig.json
      
 
-<br>   <br>  
+<br>   <br>   <br>  
   
 # <img  alt="skills"  width="40" height="40" src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/74f44c47-891a-4276-a2c6-d4153bd8aed5">  Install Pacote - `LOCAL` 
-
-
-
-
-  
+> [!CAUTION]
+> Para que o teste funcione de forma correta, acesse o diretório `dist`
+ 
 ## `1.` Publicação `local`  
-Ainda no `Git Bash Here`, rode o comando para disponibilizar o pacote de forma local, para que voce possa testá-lo já rondado um projeto React.
+
+Para o teste local da sua biblioteca já na sua aplicação de demonstração ou até algo mais desenvolvido acesse o diretório `dist` da sua lib.
+
+Ainda no `Git Bash Here`, rode o comando para disponibilizar o pacote de forma local.
 
 ```powershell
 npx yalc publish
 ```
+
 ## `2.` Instalação biblioteca `local` 
-Agora na aplicação React, rode o seguinte comando para que possa executar uma instalação local:
+Agora na sua aplicação React, rode o seguinte comando para que possa executar uma instalação local:
 ```powershell
 npx yalc add <nome da biblioteca>
 ```
+
 ## `3.`  Importe sua biblioteca
+
+> [!NOTE]
+> Caso não dê para obter o pacote apenas utilizando o caminho citando o nome do pacote, reveja o caminho correto na props *_main_* do arquivo package.json
+
 As Funções, Componentes, Hooks, etc… são importados daquele arquivo index.js ou index.ts. Aqui um exemplo da biblioteca deste repositório…
 ```powershell
 import {TableGenerator} from 'how-to-build-npm-package'
 ```
 
 <br>   <br>  
+
 # <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/284279944-e6593b0e-e98c-407a-9ab6-493243f10442.svg">  Deploy NPM `REMOTO`
 
 ## `1.` Crie uma conta na plataforma NPM
