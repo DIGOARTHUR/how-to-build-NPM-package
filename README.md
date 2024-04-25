@@ -460,7 +460,10 @@ Por exemplo
 
 
 
- <br>   <br>  
+<br>  
+<br>  
+<br>  
+
   
 # <img  alt="skills"  width="40" height="40" src="https://github-production-user-asset-6210df.s3.amazonaws.com/59892368/284275442-d1112329-3b00-47fb-9fe1-b519bc654889.svg">  Build
 O Build é muito importante após qualquer alteração no código, pois ele gerará os arquivos .js na pasta `dist` para que seja possivel a intepretação da linguagem Typescript, até mesmo em Javascript, pois será essa build que está na plataforma NPM .
@@ -500,7 +503,11 @@ Após este comando uma pasta chamada `dist` surgirá. É exatamente com este dir
      ├── tsconfig.json
      
 
-<br>   <br>   <br>  
+<br>  
+<br>  
+<br>  
+
+
   
 # <img  alt="skills"  width="40" height="40" src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/74f44c47-891a-4276-a2c6-d4153bd8aed5">  Install Pacote - `LOCAL` 
 > [!CAUTION]
@@ -517,7 +524,8 @@ npx yalc publish
 ```
 
 ## `2.` Instalação biblioteca `local` 
-Agora na sua aplicação React, rode o seguinte comando para que possa executar uma instalação local:
+Agora na sua aplicação React, no `Git Bash Here`, rode o seguinte comando para que possa executar uma instalação local:
+
 ```powershell
 npx yalc add <nome da biblioteca>
 ```
