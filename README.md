@@ -356,12 +356,13 @@ export { Sum } from './Math/sum/sum';
 
 
 # <img  alt="skills"  width="40" height="40" src="https://github.com/DIGOARTHUR/how-to-build-NPM-package/assets/59892368/7f817419-f6fe-4b25-8de1-f9d97074b982"> Testes (Componentes, Funções, Hooks, etc...)
+
+> [!NOTE]
+> É OPCIONAL
+
+
 O teste é **_opcional_** mas, como boas práticas, é essecial introduzí-lo nos seus projetos. Aqui é aplicado o `Jest`.
 Este teste se tem muito contato direto na plataforma de resolução de algoritmos [exercism.org](exercism.org/).
-
-> [!IMPORTANT]
-> NÃO É OBRIGATÓRIO
-
 
 ### `2.1` Instalando o Jest e o @types
 
