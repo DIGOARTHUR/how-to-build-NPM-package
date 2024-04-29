@@ -668,9 +668,14 @@ Na época que surgiu a ideia de construir uma biblioteca fui atrás de vários t
 
  ---
 
+
+**Gostou do tutorial? Ajude o repositório a se popularizar ⭐ ⬆️.**
+
+
+
 `by`: [@digoarthur](https://www.linkedin.com/in/digoarthur/)
 
-`sources`:  
+`based in:`:  
 [freecodecamp.org](https://www.freecodecamp.org/news/how-to-create-and-publish-your-first-npm-package/) ,
 [pauloe-me.medium](https://pauloe-me.medium.com/typescript-npm-package-publishing-a-beginners-guide-40b95908e69c) ,
 [tunmise.medium](https://medium.com/the-andela-way/build-and-publish-your-first-npm-package-a4daf0e2431) ,
