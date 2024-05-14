@@ -59,7 +59,7 @@ https://dev.to/envoy_/150-badges-for-github-pnk
 
 
 <h1 align="center">
-  Construa seu pacote/biblioteca NPM
+  Construa seu pacote/biblioteca e Publique no NPM
 </h1>
 
 <p align="center">
